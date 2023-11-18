@@ -1,4 +1,5 @@
 ﻿using System;
+using System.Numerics;
 
 namespace OrderBot
 {
@@ -6,7 +7,7 @@ namespace OrderBot
     {
         private enum State
         {
-            WELCOMING, SIZE, PROTEIN
+            WELCOMING, NAME, GENDER,AGE, EMAIL_ID, CONTACT_NO,MEMBERSHIP_PLAN, MEMBERSHIP_DETAILS,PLANS
         }
 
         private State nCur = State.WELCOMING;
@@ -26,19 +27,57 @@ namespace OrderBot
                 case State.WELCOMING:
                    
                     aMessages.Add("Hello! Welcome to FitForLess");
-                    aMessages.Add("I'm here to help you find what you're looking for\r\nWhat would you like to do?");
-                    aMessages.Add("1.Gym membership Plans 2.Fitness Classes 3.Training");
-                    this.nCur = State.SIZE;
+                    aMessages.Add("Can I have some information about you");
+                   
+                    this.nCur = State.NAME;
+                    aMessages.Add("Please provide your fullname");
+                      this.nCur = State.GENDER;
+                      break;
+
+                case State.GENDER:
+
+                    aMessages.Add("Please provide your Gender");
+                    this.nCur = State.AGE;
                     break;
-                case State.SIZE:
-                    this.oOrder.Size = sInMessage;
+                case State.AGE:
+
+                    aMessages.Add("Please provide your Age");
+                    this.nCur = State.EMAIL_ID;
+                    break;
+                case State.EMAIL_ID:
+
+                    aMessages.Add("Please provide your email id");
+                    this.nCur = State.CONTACT_NO;
+                    break;
+                case State.CONTACT_NO:
+
+                    aMessages.Add("Please provide your Contact no");
+                    this.nCur = State.MEMBERSHIP_PLAN;
+                    break;
+
+                case State.MEMBERSHIP_PLAN:
+                    aMessages.Add("Thank you for providing your personal information");
+                  
+                    aMessages.Add("We offer various membership types to suit your needs. "
+                         + "You can choose from [Gold], [Plantinum], and [Silver].");
+                    aMessages.Add("Would you like me to explain the differences between these plans ? ");
+                    this.nCur = State.MEMBERSHIP_DETAILS;
+                    
+                    break;
+                case State.MEMBERSHIP_DETAILS:
+                    
+                    aMessages.Add("\"Sure! The Silver plan costs $30/month, the Plantinum plan is $50/month, \"\r\n + \"and the Gold plan is $60/month.");
+                    aMessages.Add("What membership plan would you like to enroll (silver/plantinum/gold) ");
+                   
+                    
+                    this.nCur = State.PLANS;
+                    break;
+                case State.PLANS:
+                    this.oOrder.Plans = sInMessage;
                     this.oOrder.Save();
-                    aMessages.Add("What protein would you like on this  " + this.oOrder.Size + " Shawarama?");
-                    this.nCur = State.PROTEIN;
-                    break;
-                case State.PROTEIN:
-                    string sProtein = sInMessage;
-                    aMessages.Add("What toppings would you like on this (1. pickles 2. Tzaki) " + this.oOrder.Size + " " + sProtein + " Shawarama?");
+                    aMessages.Add("Thanks for enrolling to "  + this.oOrder.Plans);
+                    this.oOrder.Save();
+                    aMessages.Add("Kindly proceed with the payment we will integrate paypal payment later");
                     break;
 
 

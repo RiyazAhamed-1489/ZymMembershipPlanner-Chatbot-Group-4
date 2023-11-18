@@ -4,18 +4,19 @@ namespace OrderBot
 {
     public class Order : ISQLModel
     {
-        private string _size = String.Empty;
+        private string _plans = String.Empty;
         private string _phone = String.Empty;
-
+       
         public string Phone{
             get => _phone;
             set => _phone = value;
         }
 
-        public string Size{
-            get => _size;
-            set => _size = value;
+        public string Plans{
+            get => _plans;
+            set => _plans = value;
         }
+      
 
         public void Save(){
            using (var connection = new SqliteConnection(DB.GetConnectionString()))
@@ -26,20 +27,20 @@ namespace OrderBot
                 commandUpdate.CommandText =
                 @"
         UPDATE orders
-        SET size = $size
+        SET plans = $plans
         WHERE phone = $phone
     ";
-                commandUpdate.Parameters.AddWithValue("$size", Size);
+                commandUpdate.Parameters.AddWithValue("$plans", Plans);
                 commandUpdate.Parameters.AddWithValue("$phone", Phone);
                 int nRows = commandUpdate.ExecuteNonQuery();
                 if(nRows == 0){
                     var commandInsert = connection.CreateCommand();
                     commandInsert.CommandText =
                     @"
-            INSERT INTO orders(size, phone)
-            VALUES($size, $phone)
+            INSERT INTO orders(plans, phone)
+            VALUES($plans, $phone)
         ";
-                    commandInsert.Parameters.AddWithValue("$size", Size);
+                    commandInsert.Parameters.AddWithValue("$plans", Plans);
                     commandInsert.Parameters.AddWithValue("$phone", Phone);
                     int nRowsInserted = commandInsert.ExecuteNonQuery();
 

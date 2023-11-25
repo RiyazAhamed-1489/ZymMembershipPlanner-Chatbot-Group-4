@@ -1,10 +1,11 @@
 {
   "version": 2,
-  "dgSpecHash": "e2CPDJJ9EUbH40MuC9yoq2KigmNXnZ4ihQ4bQm6ZDfTujWFZ0xGfsolEPvFZRDIeD3Wb3ASYrhUOSKW1G8qEOQ==",
+  "dgSpecHash": "+9CSq9Xqx6ki3XAfi1svLzmOULwjHreYUzmSd/N3MkGuTwJcKk9Li1TzZWnT8a7QwU4B4Wcx7OecrRQZ7Dde3g==",
   "success": true,
   "projectFilePath": "D:\\Semster 2\\Developing High Quality\\OrderBot.tests\\OrderBot.tests.csproj",
   "expectedPackageFiles": [
     "C:\\Users\\Dell\\.nuget\\packages\\coverlet.collector\\3.1.2\\coverlet.collector.3.1.2.nupkg.sha512",
+    "C:\\Users\\Dell\\.nuget\\packages\\coverlet.msbuild\\6.0.0\\coverlet.msbuild.6.0.0.nupkg.sha512",
     "C:\\Users\\Dell\\.nuget\\packages\\microsoft.codecoverage\\17.1.0\\microsoft.codecoverage.17.1.0.nupkg.sha512",
     "C:\\Users\\Dell\\.nuget\\packages\\microsoft.csharp\\4.0.1\\microsoft.csharp.4.0.1.nupkg.sha512",
     "C:\\Users\\Dell\\.nuget\\packages\\microsoft.data.sqlite\\6.0.7\\microsoft.data.sqlite.6.0.7.nupkg.sha512",
@@ -95,14 +96,14 @@
     "C:\\Users\\Dell\\.nuget\\packages\\system.threading.timer\\4.3.0\\system.threading.timer.4.3.0.nupkg.sha512",
     "C:\\Users\\Dell\\.nuget\\packages\\system.xml.readerwriter\\4.3.0\\system.xml.readerwriter.4.3.0.nupkg.sha512",
     "C:\\Users\\Dell\\.nuget\\packages\\system.xml.xdocument\\4.3.0\\system.xml.xdocument.4.3.0.nupkg.sha512",
-    "C:\\Users\\Dell\\.nuget\\packages\\xunit\\2.4.1\\xunit.2.4.1.nupkg.sha512",
+    "C:\\Users\\Dell\\.nuget\\packages\\xunit\\2.6.2\\xunit.2.6.2.nupkg.sha512",
     "C:\\Users\\Dell\\.nuget\\packages\\xunit.abstractions\\2.0.3\\xunit.abstractions.2.0.3.nupkg.sha512",
-    "C:\\Users\\Dell\\.nuget\\packages\\xunit.analyzers\\0.10.0\\xunit.analyzers.0.10.0.nupkg.sha512",
-    "C:\\Users\\Dell\\.nuget\\packages\\xunit.assert\\2.4.1\\xunit.assert.2.4.1.nupkg.sha512",
-    "C:\\Users\\Dell\\.nuget\\packages\\xunit.core\\2.4.1\\xunit.core.2.4.1.nupkg.sha512",
-    "C:\\Users\\Dell\\.nuget\\packages\\xunit.extensibility.core\\2.4.1\\xunit.extensibility.core.2.4.1.nupkg.sha512",
-    "C:\\Users\\Dell\\.nuget\\packages\\xunit.extensibility.execution\\2.4.1\\xunit.extensibility.execution.2.4.1.nupkg.sha512",
-    "C:\\Users\\Dell\\.nuget\\packages\\xunit.runner.visualstudio\\2.4.3\\xunit.runner.visualstudio.2.4.3.nupkg.sha512"
+    "C:\\Users\\Dell\\.nuget\\packages\\xunit.analyzers\\1.6.0\\xunit.analyzers.1.6.0.nupkg.sha512",
+    "C:\\Users\\Dell\\.nuget\\packages\\xunit.assert\\2.6.2\\xunit.assert.2.6.2.nupkg.sha512",
+    "C:\\Users\\Dell\\.nuget\\packages\\xunit.core\\2.6.2\\xunit.core.2.6.2.nupkg.sha512",
+    "C:\\Users\\Dell\\.nuget\\packages\\xunit.extensibility.core\\2.6.2\\xunit.extensibility.core.2.6.2.nupkg.sha512",
+    "C:\\Users\\Dell\\.nuget\\packages\\xunit.extensibility.execution\\2.6.2\\xunit.extensibility.execution.2.6.2.nupkg.sha512",
+    "C:\\Users\\Dell\\.nuget\\packages\\xunit.runner.visualstudio\\2.5.4\\xunit.runner.visualstudio.2.5.4.nupkg.sha512"
   ],
   "logs": []
 }

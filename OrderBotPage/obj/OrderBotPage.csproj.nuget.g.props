@@ -13,7 +13,12 @@
     <SourceRoot Include="C:\Users\Dell\.nuget\packages\" />
     <SourceRoot Include="C:\Program Files (x86)\Microsoft Visual Studio\Shared\NuGetPackages\" />
   </ItemGroup>
+  <ImportGroup Condition=" '$(ExcludeRestorePackageImports)' != 'true' ">
+    <Import Project="$(NuGetPackageRoot)xunit.runner.visualstudio\2.5.4\build\net6.0\xunit.runner.visualstudio.props" Condition="Exists('$(NuGetPackageRoot)xunit.runner.visualstudio\2.5.4\build\net6.0\xunit.runner.visualstudio.props')" />
+    <Import Project="$(NuGetPackageRoot)xunit.core\2.6.2\build\xunit.core.props" Condition="Exists('$(NuGetPackageRoot)xunit.core\2.6.2\build\xunit.core.props')" />
+  </ImportGroup>
   <PropertyGroup Condition=" '$(ExcludeRestorePackageImports)' != 'true' ">
+    <Pkgxunit_analyzers Condition=" '$(Pkgxunit_analyzers)' == '' ">C:\Users\Dell\.nuget\packages\xunit.analyzers\1.6.0</Pkgxunit_analyzers>
     <PkgNewtonsoft_Json Condition=" '$(PkgNewtonsoft_Json)' == '' ">C:\Users\Dell\.nuget\packages\newtonsoft.json\9.0.1</PkgNewtonsoft_Json>
   </PropertyGroup>
 </Project>

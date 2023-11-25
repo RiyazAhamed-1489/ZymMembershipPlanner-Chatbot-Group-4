@@ -9,7 +9,9 @@
       "OrderBotPage/1.0.0": {
         "dependencies": {
           "OrderBot": "1.0.0",
-          "Twilio": "5.9.8"
+          "Twilio": "5.9.8",
+          "xunit": "2.6.2",
+          "xunit.runner.visualstudio": "2.5.4"
         },
         "runtime": {
           "OrderBotPage.dll": {}
@@ -993,9 +995,65 @@
           }
         }
       },
+      "xunit/2.6.2": {
+        "dependencies": {
+          "xunit.analyzers": "1.6.0",
+          "xunit.assert": "2.6.2",
+          "xunit.core": "2.6.2"
+        }
+      },
+      "xunit.abstractions/2.0.3": {
+        "runtime": {
+          "lib/netstandard2.0/xunit.abstractions.dll": {
+            "assemblyVersion": "2.0.0.0",
+            "fileVersion": "2.0.0.0"
+          }
+        }
+      },
+      "xunit.analyzers/1.6.0": {},
+      "xunit.assert/2.6.2": {
+        "runtime": {
+          "lib/net6.0/xunit.assert.dll": {
+            "assemblyVersion": "2.6.2.0",
+            "fileVersion": "2.6.2.0"
+          }
+        }
+      },
+      "xunit.core/2.6.2": {
+        "dependencies": {
+          "xunit.extensibility.core": "2.6.2",
+          "xunit.extensibility.execution": "2.6.2"
+        }
+      },
+      "xunit.extensibility.core/2.6.2": {
+        "dependencies": {
+          "NETStandard.Library": "1.6.1",
+          "xunit.abstractions": "2.0.3"
+        },
+        "runtime": {
+          "lib/netstandard1.1/xunit.core.dll": {
+            "assemblyVersion": "2.6.2.0",
+            "fileVersion": "2.6.2.0"
+          }
+        }
+      },
+      "xunit.extensibility.execution/2.6.2": {
+        "dependencies": {
+          "NETStandard.Library": "1.6.1",
+          "xunit.extensibility.core": "2.6.2"
+        },
+        "runtime": {
+          "lib/netstandard1.1/xunit.execution.dotnet.dll": {
+            "assemblyVersion": "2.6.2.0",
+            "fileVersion": "2.6.2.0"
+          }
+        }
+      },
+      "xunit.runner.visualstudio/2.5.4": {},
       "OrderBot/1.0.0": {
         "dependencies": {
-          "Microsoft.Data.Sqlite": "6.0.7"
+          "Microsoft.Data.Sqlite": "6.0.7",
+          "xunit": "2.6.2"
         },
         "runtime": {
           "OrderBot.dll": {}
@@ -1652,6 +1710,62 @@
       "sha512": "sha512-q+yA4F6ru+nqf7on+2QhNtd8qQt05asIV733pV2AhPLdAVttsIiWc6nu7Poe0IsFSmk6MXC4ZRFhE96OIzybhw==",
       "path": "twilio/5.9.8",
       "hashPath": "twilio.5.9.8.nupkg.sha512"
+    },
+    "xunit/2.6.2": {
+      "type": "package",
+      "serviceable": true,
+      "sha512": "sha512-sErOyzTZBfgeLcdu5y3CkhCirZikCe9GwEv56jbQRjSa4FyI2tIHjfBRvlWqg7M78bfAGajrreH0IHnxrUOpVA==",
+      "path": "xunit/2.6.2",
+      "hashPath": "xunit.2.6.2.nupkg.sha512"
+    },
+    "xunit.abstractions/2.0.3": {
+      "type": "package",
+      "serviceable": true,
+      "sha512": "sha512-pot1I4YOxlWjIb5jmwvvQNbTrZ3lJQ+jUGkGjWE3hEFM0l5gOnBWS+H3qsex68s5cO52g+44vpGzhAt+42vwKg==",
+      "path": "xunit.abstractions/2.0.3",
+      "hashPath": "xunit.abstractions.2.0.3.nupkg.sha512"
+    },
+    "xunit.analyzers/1.6.0": {
+      "type": "package",
+      "serviceable": true,
+      "sha512": "sha512-b/Wbrqr/bFvcjqAbYdJyCCvjz+PjjKMnoK/K6sbcCBu94pqAkB2vBAHFo87wNq2awsLPAuq5MA7q0XexyQ3mJQ==",
+      "path": "xunit.analyzers/1.6.0",
+      "hashPath": "xunit.analyzers.1.6.0.nupkg.sha512"
+    },
+    "xunit.assert/2.6.2": {
+      "type": "package",
+      "serviceable": true,
+      "sha512": "sha512-JOj2+zWS08M59bCk3MkZFcKj2Izb2zwkHSPIKJLvnZYLR2Nw6HifjvBCpa8XhMF3mxDuGwZ0+ncmlhE9WoEaZw==",
+      "path": "xunit.assert/2.6.2",
+      "hashPath": "xunit.assert.2.6.2.nupkg.sha512"
+    },
+    "xunit.core/2.6.2": {
+      "type": "package",
+      "serviceable": true,
+      "sha512": "sha512-LxJ06D9uTDyvHY52+Lym2TUlq3ObgAKSTuzM9gniau8qI1fd/CPag4PFaGs0RJfunUJtYHg9+XrS5EcW/5dxGA==",
+      "path": "xunit.core/2.6.2",
+      "hashPath": "xunit.core.2.6.2.nupkg.sha512"
+    },
+    "xunit.extensibility.core/2.6.2": {
+      "type": "package",
+      "serviceable": true,
+      "sha512": "sha512-T8CmshbP1EeaDibLwgU/aEe53zrW0+x+mEz5aKxexS5vVyj1UwgDUjcTK/+prMF/9KgMHkgx1vIe7wv58wO6RQ==",
+      "path": "xunit.extensibility.core/2.6.2",
+      "hashPath": "xunit.extensibility.core.2.6.2.nupkg.sha512"
+    },
+    "xunit.extensibility.execution/2.6.2": {
+      "type": "package",
+      "serviceable": true,
+      "sha512": "sha512-kKo7XqyLF8blXGqQHlqKQ+AzST42kpB7oG81Km/kFEzWVfeDMgaEquOLAr/ZiR4tnkUbbWYrY6CJPTavFqGn6Q==",
+      "path": "xunit.extensibility.execution/2.6.2",
+      "hashPath": "xunit.extensibility.execution.2.6.2.nupkg.sha512"
+    },
+    "xunit.runner.visualstudio/2.5.4": {
+      "type": "package",
+      "serviceable": true,
+      "sha512": "sha512-YUtEOBdArAISyb1cTWcHc6/bilSDB9q5lc8ughPQP1MqlAKSkxKMBqLQ+tiWMFRBd2o22E59nLD/4V5R3jfZxQ==",
+      "path": "xunit.runner.visualstudio/2.5.4",
+      "hashPath": "xunit.runner.visualstudio.2.5.4.nupkg.sha512"
     },
     "OrderBot/1.0.0": {
       "type": "project",

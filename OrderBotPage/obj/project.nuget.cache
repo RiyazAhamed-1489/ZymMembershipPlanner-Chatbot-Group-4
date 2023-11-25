@@ -1,6 +1,6 @@
 {
   "version": 2,
-  "dgSpecHash": "8hYRvO6wSN0P5ILNumwhld9gf8NHRg5QdMKx3roftrZjqM8oQ4bGqDWQyEWskmrbg56oMLvPcEL0icp0SdJZcQ==",
+  "dgSpecHash": "BtI7Pil7AH+5VBYdN6IrUQfLWM+oMLrxOZpLbR8gb+2o+sa++EETEw16iLk8kvnTwrNQj+uCbdKYyCbSa/RIVw==",
   "success": true,
   "projectFilePath": "D:\\Semster 2\\Developing High Quality\\OrderBotPage\\OrderBotPage.csproj",
   "expectedPackageFiles": [
@@ -95,7 +95,15 @@
     "C:\\Users\\Dell\\.nuget\\packages\\system.threading.timer\\4.3.0\\system.threading.timer.4.3.0.nupkg.sha512",
     "C:\\Users\\Dell\\.nuget\\packages\\system.xml.readerwriter\\4.3.0\\system.xml.readerwriter.4.3.0.nupkg.sha512",
     "C:\\Users\\Dell\\.nuget\\packages\\system.xml.xdocument\\4.3.0\\system.xml.xdocument.4.3.0.nupkg.sha512",
-    "C:\\Users\\Dell\\.nuget\\packages\\twilio\\5.9.8\\twilio.5.9.8.nupkg.sha512"
+    "C:\\Users\\Dell\\.nuget\\packages\\twilio\\5.9.8\\twilio.5.9.8.nupkg.sha512",
+    "C:\\Users\\Dell\\.nuget\\packages\\xunit\\2.6.2\\xunit.2.6.2.nupkg.sha512",
+    "C:\\Users\\Dell\\.nuget\\packages\\xunit.abstractions\\2.0.3\\xunit.abstractions.2.0.3.nupkg.sha512",
+    "C:\\Users\\Dell\\.nuget\\packages\\xunit.analyzers\\1.6.0\\xunit.analyzers.1.6.0.nupkg.sha512",
+    "C:\\Users\\Dell\\.nuget\\packages\\xunit.assert\\2.6.2\\xunit.assert.2.6.2.nupkg.sha512",
+    "C:\\Users\\Dell\\.nuget\\packages\\xunit.core\\2.6.2\\xunit.core.2.6.2.nupkg.sha512",
+    "C:\\Users\\Dell\\.nuget\\packages\\xunit.extensibility.core\\2.6.2\\xunit.extensibility.core.2.6.2.nupkg.sha512",
+    "C:\\Users\\Dell\\.nuget\\packages\\xunit.extensibility.execution\\2.6.2\\xunit.extensibility.execution.2.6.2.nupkg.sha512",
+    "C:\\Users\\Dell\\.nuget\\packages\\xunit.runner.visualstudio\\2.5.4\\xunit.runner.visualstudio.2.5.4.nupkg.sha512"
   ],
   "logs": []
 }

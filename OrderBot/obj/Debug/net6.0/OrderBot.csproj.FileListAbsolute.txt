@@ -10,3 +10,8 @@ D:\Semster 2\Developing High Quality\OrderBot\obj\Debug\net6.0\OrderBot.dll
 D:\Semster 2\Developing High Quality\OrderBot\obj\Debug\net6.0\refint\OrderBot.dll
 D:\Semster 2\Developing High Quality\OrderBot\obj\Debug\net6.0\OrderBot.pdb
 D:\Semster 2\Developing High Quality\OrderBot\obj\Debug\net6.0\ref\OrderBot.dll
+D:\Semster 2\Developing High Quality\OrderBot\bin\Debug\net6.0\xunit.runner.visualstudio.dotnetcore.testadapter.dll
+D:\Semster 2\Developing High Quality\OrderBot\bin\Debug\net6.0\xunit.runner.reporters.netcoreapp10.dll
+D:\Semster 2\Developing High Quality\OrderBot\bin\Debug\net6.0\xunit.runner.utility.netcoreapp10.dll
+D:\Semster 2\Developing High Quality\OrderBot\bin\Debug\net6.0\OrderBot.runtimeconfig.json
+D:\Semster 2\Developing High Quality\OrderBot\obj\Debug\net6.0\OrderBot.genruntimeconfig.cache

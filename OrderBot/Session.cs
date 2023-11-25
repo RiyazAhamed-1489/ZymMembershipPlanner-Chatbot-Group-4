@@ -16,7 +16,7 @@ namespace OrderBot
         public Session(string sPhone)
         {
             this.oOrder = new Order();
-            this.oOrder.Phone = sPhone;
+           // this.oOrder.Phone = sPhone;
         }
 
         public List<String> OnMessage(String sInMessage)
@@ -27,9 +27,12 @@ namespace OrderBot
                 case State.WELCOMING:
                    
                     aMessages.Add("Hello! Welcome to FitForLess");
+
                     aMessages.Add("Can I have some information about you");
-                   
+                    
                     this.nCur = State.NAME;
+                    break;
+                case State.NAME:
                     aMessages.Add("Please provide your fullname");
                       this.nCur = State.GENDER;
                       break;
@@ -46,7 +49,7 @@ namespace OrderBot
                     break;
                 case State.EMAIL_ID:
 
-                    aMessages.Add("Please provide your email id");
+                    aMessages.Add("Please provide your Email id");
                     this.nCur = State.CONTACT_NO;
                     break;
                 case State.CONTACT_NO:
@@ -60,7 +63,7 @@ namespace OrderBot
                   
                     aMessages.Add("We offer various membership types to suit your needs. "
                          + "You can choose from [Gold], [Plantinum], and [Silver].");
-                    aMessages.Add("Would you like me to explain the differences between these plans ? ");
+                    aMessages.Add("Would you like me to explain the differences between these plans ? Yes/No ");
                     this.nCur = State.MEMBERSHIP_DETAILS;
                     
                     break;
@@ -74,10 +77,11 @@ namespace OrderBot
                     break;
                 case State.PLANS:
                     this.oOrder.Plans = sInMessage;
-                    this.oOrder.Save();
+                    //this.oOrder.Save();
                     aMessages.Add("Thanks for enrolling to "  + this.oOrder.Plans);
-                    this.oOrder.Save();
-                    aMessages.Add("Kindly proceed with the payment we will integrate paypal payment later");
+
+                    //this.oOrder.Save();
+                   // aMessages.Add("Kindly proceed with the payment we will integrate paypal payment later");
                     break;
 
 

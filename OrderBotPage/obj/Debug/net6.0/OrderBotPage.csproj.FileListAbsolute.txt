@@ -54,3 +54,10 @@ D:\Semster 2\Developing High Quality\OrderBotPage\obj\Debug\net6.0\refint\OrderB
 D:\Semster 2\Developing High Quality\OrderBotPage\obj\Debug\net6.0\OrderBotPage.pdb
 D:\Semster 2\Developing High Quality\OrderBotPage\obj\Debug\net6.0\OrderBotPage.genruntimeconfig.cache
 D:\Semster 2\Developing High Quality\OrderBotPage\obj\Debug\net6.0\ref\OrderBotPage.dll
+D:\Semster 2\Developing High Quality\OrderBotPage\bin\Debug\net6.0\xunit.runner.visualstudio.dotnetcore.testadapter.dll
+D:\Semster 2\Developing High Quality\OrderBotPage\bin\Debug\net6.0\xunit.runner.reporters.netcoreapp10.dll
+D:\Semster 2\Developing High Quality\OrderBotPage\bin\Debug\net6.0\xunit.runner.utility.netcoreapp10.dll
+D:\Semster 2\Developing High Quality\OrderBotPage\bin\Debug\net6.0\xunit.abstractions.dll
+D:\Semster 2\Developing High Quality\OrderBotPage\bin\Debug\net6.0\xunit.assert.dll
+D:\Semster 2\Developing High Quality\OrderBotPage\bin\Debug\net6.0\xunit.core.dll
+D:\Semster 2\Developing High Quality\OrderBotPage\bin\Debug\net6.0\xunit.execution.dotnet.dll

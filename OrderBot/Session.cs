@@ -1,5 +1,6 @@
 ﻿using System;
 using System.Numerics;
+using System.Text.RegularExpressions;
 
 namespace OrderBot
 {
@@ -22,69 +23,93 @@ namespace OrderBot
         public List<String> OnMessage(String sInMessage)
         {
             List<String> aMessages = new List<string>();
+
+            /* if (!IsValidEmail(sInMessage.Trim()) && this.nCur == State.EMAIL_ID)
+             {
+                 this.nCur = State.EMAIL_ID;
+                 aMessages.Add("Please Enter a Valid Email.");
+             }*/
             switch (this.nCur)
             {
                 case State.WELCOMING:
-                   
+                    this.oOrder.Welcome = sInMessage;
                     aMessages.Add("Hello! Welcome to FitForLess");
 
                     aMessages.Add("Can I have some information about you");
-                    
+
                     this.nCur = State.NAME;
                     break;
                 case State.NAME:
+
                     aMessages.Add("Please provide your fullname");
-                      this.nCur = State.GENDER;
-                      break;
+
+                    this.nCur = State.GENDER;
+                    
+                    break;
 
                 case State.GENDER:
-
+                    this.oOrder.Name = sInMessage;
+                    aMessages.Add("Your full name is " + this.oOrder.Name);
                     aMessages.Add("Please provide your Gender");
                     this.nCur = State.AGE;
+                  
                     break;
                 case State.AGE:
-
+                    this.oOrder.Gender = sInMessage;
+                    aMessages.Add("Your Gender is " + this.oOrder.Gender);
                     aMessages.Add("Please provide your Age");
                     this.nCur = State.EMAIL_ID;
+                    
                     break;
                 case State.EMAIL_ID:
-
+                    this.oOrder.Age = sInMessage;
+                    aMessages.Add("Your Age is " + this.oOrder.Age);
                     aMessages.Add("Please provide your Email id");
-                    this.nCur = State.CONTACT_NO;
+                    this.nCur = State.CONTACT_NO;                
                     break;
                 case State.CONTACT_NO:
-
+                    this.oOrder.Emailid = sInMessage;
+                    aMessages.Add("Your email id is " + this.oOrder.Emailid);
                     aMessages.Add("Please provide your Contact no");
                     this.nCur = State.MEMBERSHIP_PLAN;
+                  
                     break;
 
                 case State.MEMBERSHIP_PLAN:
+
+                    this.oOrder.ContactNo = sInMessage;
+                    aMessages.Add("Your Contact No is " + this.oOrder.ContactNo);
+                    
                     aMessages.Add("Thank you for providing your personal information");
-                  
+
                     aMessages.Add("We offer various membership types to suit your needs. "
-                         + "You can choose from [Gold], [Plantinum], and [Silver].");
+                                            + "You can choose from [Gold], [Plantinum], and [Silver].");
                     aMessages.Add("Would you like me to explain the differences between these plans ? Yes/No ");
                     this.nCur = State.MEMBERSHIP_DETAILS;
-                    
+
                     break;
+                                  
+
                 case State.MEMBERSHIP_DETAILS:
-                    
+                  
                     aMessages.Add("\"Sure! The Silver plan costs $30/month, the Plantinum plan is $50/month, \"\r\n + \"and the Gold plan is $60/month.");
                     aMessages.Add("What membership plan would you like to enroll (silver/plantinum/gold) ");
-                   
-                    
+
                     this.nCur = State.PLANS;
                     break;
                 case State.PLANS:
+                    
                     this.oOrder.Plans = sInMessage;
-                    //this.oOrder.Save();
-                    aMessages.Add("Thanks for enrolling to "  + this.oOrder.Plans);
+                    aMessages.Add("Thanks for enrolling to "  + this.oOrder.Plans + " membership");
 
-                    //this.oOrder.Save();
-                   // aMessages.Add("Kindly proceed with the payment we will integrate paypal payment later");
+                    this.oOrder.Save();
+
+                    aMessages.Add("we look forward to seeing you soon");
+                    aMessages.Add("Have a great day!");
+                   
                     break;
 
-
+                
             }
             aMessages.ForEach(delegate (String sMessage)
             {
@@ -92,6 +117,8 @@ namespace OrderBot
             });
             return aMessages;
         }
+
+      
 
     }
 }

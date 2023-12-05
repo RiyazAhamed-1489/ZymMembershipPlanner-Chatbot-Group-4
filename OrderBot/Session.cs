@@ -83,8 +83,8 @@ namespace OrderBot
                     aMessages.Add("Thank you for providing your personal information");
 
                     aMessages.Add("We offer various membership types to suit your needs. "
-                                            + "You can choose from [Gold], [Plantinum], and [Silver].");
-                    aMessages.Add("Would you like me to explain the differences between these plans ? Yes/No ");
+                                            + "Three membership tyoes are available -[Gold], [Plantinum], and [Silver].");
+                    aMessages.Add("Would you like me to explain the differences between these plans ? ");
                     this.nCur = State.MEMBERSHIP_DETAILS;
 
                     break;
@@ -92,8 +92,8 @@ namespace OrderBot
 
                 case State.MEMBERSHIP_DETAILS:
                   
-                    aMessages.Add("\"Sure! The Silver plan costs $30/month, the Plantinum plan is $50/month, \"\r\n + \"and the Gold plan is $60/month.");
-                    aMessages.Add("What membership plan would you like to enroll (silver/plantinum/gold) ");
+                    aMessages.Add("\"The Silver plan costs $30/month, the Gold plan costs $60/month, \"\r\n  \"and the Platinum plan is $80/month.");
+                    aMessages.Add("What membership plan would you like to enroll (Silver/Gold/Platinum) ");
 
                     this.nCur = State.PLANS;
                     break;

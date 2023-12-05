@@ -124,7 +124,7 @@ namespace OrderBot.tests
             oSession.OnMessage("Email id");
             oSession.OnMessage("Contact no");
           
-            String sInput = oSession.OnMessage("membership types")[1];
+            String sInput = oSession.OnMessage("membership type")[2];
             Assert.Contains("membership types", sInput);
         }
 
